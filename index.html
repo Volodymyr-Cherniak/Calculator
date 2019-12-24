@@ -2,33 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JavaScript Tutorial</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body >
-
-    <div class="block1">
-        <p>Top left:
-            <input type="range" id="rtl" min="0" max="100" value="0" oninput="fun1()">
-            <input type="text" id="ttl" value="0">
-        </p>
-        <p>Top rigth:
-            <input type="range" id="rtr" min="0" max="100" value="0" oninput="fun1()">
-            <input type="text" id="ttr" value="0">
-        </p>
-        <p>Down left:
-            <input type="range" id="rbl" min="0" max="100" value="0" oninput="fun1()">
-            <input type="text" id="tbl" value="0">
-        </p>
-        <p>Down rigth:
-            <input type="range" id="rbr" min="0" max="100" value="0" oninput="fun1()">
-            <input type="text" id="tbr" value="0">
-        </p>
+<body>
+    <div class="class">
+        <h1 class="h1">Calculator </h1>
+        <h2 class="h1 h2">v1.0</h2>
     </div>
-    <div id="block"></div>
 
-
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="item input">
+            <form name="form"><input type="text" name="textview" readonly></form>
+        </div>
+        <div class="item clean btn" onclick="clean()">C</div>
+        <div class="item back btn" onclick="back()">&larr;</div>
+        <div class="item btn" onclick="insert('+')">+</div>
+        <div class="item btn" onclick="insert('-')">-</div>
+        <div class="item btn" onclick="insert('*')">&times;</div>
+        <div class="item btn" onclick="insert('/')">&divide;</div>
+        <div class="item btn" onclick="insert('7')">7</div>
+        <div class="item btn" onclick="insert('8')">8</div>
+        <div class="item btn" onclick="insert('9')">9</div>
+        <div class="item btn" onclick="insert('(')">(</div>
+        <div class="item btn" onclick="insert('4')">4</div>
+        <div class="item btn" onclick="insert('5')">5</div>
+        <div class="item btn" onclick="insert('6')">6</div>
+        <div class="item btn" onclick="insert(')')">)</div>
+        <div class="item btn" onclick="insert('1')">1</div>
+        <div class="item btn" onclick="insert('2')">2</div>
+        <div class="item btn" onclick="insert('3')">3</div>
+        <div class="item equal btn" onclick="equal()">=</div>
+        <div class="item zero btn" onclick="insert('0')">0</div>
+        <div class="item btn" onclick="insert('.')">.</div>
+    </div>
+    <script src="calculator.js" onclick="insert()"></script>
 </body>
 </html>
